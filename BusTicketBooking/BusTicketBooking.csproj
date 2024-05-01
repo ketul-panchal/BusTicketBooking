@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A3013935-1D8E-4C39-8B61-04967108F3D4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BusTicketBooking</RootNamespace>
+    <AssemblyName>BusTicketBooking</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddJourney.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddJourney.Designer.cs">
+      <DependentUpon>AddJourney.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin.Designer.cs">
+      <DependentUpon>admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewJourmey.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewJourmey.Designer.cs">
+      <DependentUpon>viewJourmey.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BookTicket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookTicket.Designer.cs">
+      <DependentUpon>BookTicket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusReport.Designer.cs">
+      <DependentUpon>BusReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CancelTicket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CancelTicket.Designer.cs">
+      <DependentUpon>CancelTicket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagePassenger.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagePassenger.Designer.cs">
+      <DependentUpon>ManagePassenger.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegisterBus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisterBus.Designer.cs">
+      <DependentUpon>RegisterBus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ResgisterPassenger.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResgisterPassenger.Designer.cs">
+      <DependentUpon>ResgisterPassenger.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddJourney.resx">
+      <DependentUpon>AddJourney.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin.resx">
+      <DependentUpon>admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewJourmey.resx">
+      <DependentUpon>viewJourmey.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookTicket.resx">
+      <DependentUpon>BookTicket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusReport.resx">
+      <DependentUpon>BusReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CancelTicket.resx">
+      <DependentUpon>CancelTicket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagePassenger.resx">
+      <DependentUpon>ManagePassenger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RegisterBus.resx">
+      <DependentUpon>RegisterBus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResgisterPassenger.resx">
+      <DependentUpon>ResgisterPassenger.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chuttersnap-kq8iWoh5-mU-unsplash.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mangopear-creative-A3xpZYjAZyk-unsplash.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
